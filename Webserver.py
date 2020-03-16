@@ -18,7 +18,7 @@ while True:
     # Fill-in-start #Fill-in-end
     try:
         # Receives the request message from the client
-        message = connectionSocket.recv(10240)  # Fill-in-start #Fill-in-end
+        message = connectionSocket.recv(1024)  # Fill-in-start #Fill-in-end
         # Extract the path of the requested object from the message
         # The path is the second part of HTTP header, identified by [1]
         filename = message.split()[1]
@@ -28,14 +28,16 @@ while True:
         f = open(filename[1:])
         # Store the entire content of the requested file in a temporary buffer
         output_data = f.read()  # Fill-in-start #Fill-in-end
+
         # Send the HTTP response header line to the connection socket
         # Fill-in-start
         connectionSocket.send(message.decode().encode())
-
+        print(output_data)
         # Fill-in-end
         # Send the content of the requested file to the connection socket
-        for i in range(0, len(output_data)):
-            connectionSocket.send(output_data[i].encode())
+        connectionSocket.send(output_data.encode())
+        #for i in range(0, len(output_data)):
+        #    connectionSocket.send(output_data[i].encode())
         # Close the client connection socket
         connectionSocket.close()
     except IOError:
