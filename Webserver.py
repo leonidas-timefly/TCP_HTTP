@@ -56,4 +56,3 @@ while 1:
 
 #serverSocket.close()
 # Terminate the program after sending the corresponding data
-#sys.exit()

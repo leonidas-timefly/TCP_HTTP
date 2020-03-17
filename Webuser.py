@@ -20,4 +20,3 @@ while k:
     #sock.close()
 
 sock.close()
-#sock.close()
