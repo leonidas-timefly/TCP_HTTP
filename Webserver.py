@@ -55,4 +55,3 @@ while 1:
     k = 0
 
 #serverSocket.close()
-# Terminate the program after sending the corresponding data
