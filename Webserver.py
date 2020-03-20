@@ -53,5 +53,3 @@ while True:
 
 while 1:
     k = 0
-
-#serverSocket.close()
