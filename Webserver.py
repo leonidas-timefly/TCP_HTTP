@@ -2,7 +2,6 @@ from socket import *
 import sys
 serverSocket = socket(AF_INET, SOCK_STREAM)
 
-# Prepare a sever socket
 #Fill-in-start
 
 serverSocket.bind(('192.168.43.14', 7990))    #IP地址及端口号
