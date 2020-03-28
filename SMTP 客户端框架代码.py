@@ -16,7 +16,7 @@ to_address = 'timeschangezhao@gmail.com' #Fill-in-start  #Fill-in-end
 
 # Auth information (Encode with base64)
 user_name = base64.b64encode(b'2442344049@qq.com').decode() #Fill-in-start  #Fill-in-end
-password = base64.b64encode(b'******').decode() #Fill-in-start  #Fill-in-end
+password = base64.b64encode(b'***').decode() #Fill-in-start  #Fill-in-end
 
 # Create socket called clientSocket and establish a TCP connection with mailserver
 #Fill-in-start
